@@ -1,0 +1,1065 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CDO Pet Doctor | Veterinary Clinic in Cagayan de Oro</title>
+    <meta
+      name="description"
+      content="CDO Pet Doctor offers compassionate veterinary consultation, vaccinations, grooming, surgery, wellness care, pet supplies, and emergency assistance in Cagayan de Oro."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clinic: {
+                green: "#00A84F",
+                deep: "#067A3F",
+                mint: "#E9FFF4",
+                yellow: "#FFC928",
+                gold: "#F2AC1B",
+                ink: "#132019",
+                soft: "#F6FBF8",
+              },
+            },
+            fontFamily: {
+              sans: ["Inter", "system-ui", "sans-serif"],
+              display: ["Manrope", "Inter", "system-ui", "sans-serif"],
+            },
+            boxShadow: {
+              premium: "0 24px 70px rgba(10, 96, 53, 0.12)",
+              soft: "0 14px 34px rgba(19, 32, 25, 0.08)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background:
+          radial-gradient(
+            circle at top left,
+            rgba(0, 168, 79, 0.14),
+            transparent 30rem
+          ),
+          radial-gradient(
+            circle at 80% 4rem,
+            rgba(255, 201, 40, 0.22),
+            transparent 26rem
+          ),
+          #ffffff;
+        color: #132019;
+        font-family: "Inter", system-ui, sans-serif;
+      }
+
+      .paw-pattern {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .paw-pattern::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.08;
+        background-image: url("data:image/svg+xml,%3Csvg width='96' height='96' viewBox='0 0 96 96' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2300A84F'%3E%3Cellipse cx='40' cy='49' rx='10' ry='13'/%3E%3Cellipse cx='25' cy='36' rx='6' ry='8'/%3E%3Cellipse cx='38' cy='27' rx='6' ry='9'/%3E%3Cellipse cx='53' cy='29' rx='6' ry='8'/%3E%3Cellipse cx='65' cy='39' rx='6' ry='8'/%3E%3C/g%3E%3C/svg%3E");
+        background-size: 120px 120px;
+      }
+
+      .glass-nav {
+        backdrop-filter: blur(18px);
+        background: rgba(255, 255, 255, 0.84);
+        border-bottom: 1px solid rgba(6, 122, 63, 0.12);
+      }
+
+      .brand-glow {
+        box-shadow:
+          0 24px 80px rgba(0, 168, 79, 0.2),
+          inset 0 1px 0 rgba(255, 255, 255, 0.8);
+      }
+
+      .soft-gradient {
+        background:
+          linear-gradient(
+            135deg,
+            rgba(233, 255, 244, 0.92),
+            rgba(255, 255, 255, 0.96) 48%,
+            rgba(255, 248, 220, 0.94)
+          ),
+          #ffffff;
+      }
+
+      .medical-band {
+        background:
+          linear-gradient(
+            135deg,
+            rgba(0, 168, 79, 0.94),
+            rgba(6, 122, 63, 0.98)
+          ),
+          #067a3f;
+      }
+
+      .image-mask {
+        clip-path: polygon(0 0, 100% 0, 100% 88%, 88% 100%, 0 100%);
+      }
+
+      .hover-lift {
+        transition:
+          transform 220ms ease,
+          box-shadow 220ms ease,
+          border-color 220ms ease;
+      }
+
+      .hover-lift:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 22px 54px rgba(10, 96, 53, 0.14);
+        border-color: rgba(0, 168, 79, 0.32);
+      }
+
+      .premium-card-gradient {
+        background:
+          radial-gradient(
+            circle at 88% 12%,
+            rgba(255, 201, 40, 0.18),
+            transparent 14rem
+          ),
+          linear-gradient(
+            135deg,
+            rgba(233, 255, 244, 0.96),
+            #ffffff 48%,
+            rgba(255, 251, 232, 0.96)
+          );
+      }
+
+      .feature-card-gradient {
+        background:
+          radial-gradient(
+            circle at 92% 8%,
+            rgba(255, 201, 40, 0.2),
+            transparent 12rem
+          ),
+          linear-gradient(135deg, #ffffff 0%, rgba(233, 255, 244, 0.98) 100%);
+      }
+
+      .marquee {
+        animation: floaty 7s ease-in-out infinite;
+      }
+
+      @keyframes floaty {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-12px);
+        }
+      }
+
+      .reveal-line {
+        background: linear-gradient(90deg, #00a84f, #ffc928);
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <header class="glass-nav fixed inset-x-0 top-0 z-50">
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8"
+      >
+        <a
+          href="#home"
+          class="flex items-center gap-3"
+          aria-label="CDO Pet Doctor home"
+        >
+          <span
+            class="flex h-12 w-12 items-center justify-center rounded-lg bg-clinic-green text-white shadow-soft"
+          >
+            <i data-lucide="paw-print" class="h-7 w-7"></i>
+          </span>
+          <span class="leading-tight">
+            <span
+              class="block font-display text-lg font-extrabold tracking-normal text-clinic-ink"
+              >CDO Pet Doctor</span
+            >
+            <span
+              class="block text-xs font-semibold uppercase tracking-[0.16em] text-clinic-deep"
+              >Veterinary Clinic</span
+            >
+          </span>
+        </a>
+
+        <div
+          class="hidden items-center gap-7 text-sm font-semibold text-slate-700 lg:flex"
+        >
+          <a class="transition hover:text-clinic-green" href="#services"
+            >Services</a
+          >
+          <a class="transition hover:text-clinic-green" href="#why"
+            >Why Choose Us</a
+          >
+          <a class="transition hover:text-clinic-green" href="#reviews"
+            >Reviews</a
+          >
+          <a class="transition hover:text-clinic-green" href="#location"
+            >Location</a
+          >
+        </div>
+
+        <a
+          href="tel:+639177942319"
+          class="hidden items-center gap-2 rounded-lg bg-clinic-green px-5 py-3 text-sm font-bold text-white shadow-soft transition hover:bg-clinic-deep md:inline-flex"
+        >
+          <i data-lucide="phone-call" class="h-4 w-4"></i>
+          0917 794 2319
+        </a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="paw-pattern relative overflow-hidden pt-28">
+        <div
+          class="mx-auto grid max-w-7xl items-center gap-12 px-5 pb-20 pt-10 lg:grid-cols-[1.02fr_0.98fr] lg:px-8 lg:pb-28 lg:pt-16"
+        >
+          <div class="relative z-10" data-aos="fade-up">
+            <div
+              class="mb-6 inline-flex items-center gap-2 rounded-lg border border-clinic-green/20 bg-white/80 px-4 py-2 text-sm font-bold text-clinic-deep shadow-soft"
+            >
+              <span class="h-2.5 w-2.5 rounded-full bg-clinic-yellow"></span>
+              4.0 star clinic rating from 21 reviews
+            </div>
+
+            <h1
+              class="font-display text-4xl font-extrabold leading-[1.05] tracking-normal text-clinic-ink sm:text-5xl lg:text-7xl"
+            >
+              Trusted CDO Veterinary Care
+            </h1>
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
+              Professional veterinary services, compassionate grooming,
+              preventive care, surgery, and pet supplies for families across
+              Cagayan de Oro.
+            </p>
+
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="https://www.facebook.com/CDOPetDoctor/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2 rounded-lg bg-clinic-green px-6 py-4 text-base font-extrabold text-white shadow-premium transition hover:bg-clinic-deep"
+              >
+                <i data-lucide="calendar-check" class="h-5 w-5"></i>
+                Book Appointment
+              </a>
+              <a
+                href="#location"
+                class="inline-flex items-center justify-center gap-2 rounded-lg border border-clinic-green/25 bg-white px-6 py-4 text-base font-extrabold text-clinic-deep shadow-soft transition hover:border-clinic-green hover:bg-clinic-mint"
+              >
+                <i data-lucide="map-pin" class="h-5 w-5"></i>
+                Visit Clinic
+              </a>
+            </div>
+
+            <div class="mt-9 grid gap-3 sm:grid-cols-3">
+              <div
+                class="rounded-lg border border-white bg-white/86 p-4 shadow-soft"
+              >
+                <i
+                  data-lucide="stethoscope"
+                  class="mb-3 h-6 w-6 text-clinic-green"
+                ></i>
+                <p class="text-sm font-extrabold text-clinic-ink">
+                  Professional Veterinary Services
+                </p>
+              </div>
+              <div
+                class="rounded-lg border border-white bg-white/86 p-4 shadow-soft"
+              >
+                <i
+                  data-lucide="scissors"
+                  class="mb-3 h-6 w-6 text-clinic-green"
+                ></i>
+                <p class="text-sm font-extrabold text-clinic-ink">
+                  Pet Grooming
+                </p>
+              </div>
+              <div
+                class="rounded-lg border border-white bg-white/86 p-4 shadow-soft"
+              >
+                <i
+                  data-lucide="syringe"
+                  class="mb-3 h-6 w-6 text-clinic-green"
+                ></i>
+                <p class="text-sm font-extrabold text-clinic-ink">
+                  Vaccinations & Surgery
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative z-10" data-aos="fade-left" data-aos-delay="120">
+            <div
+              class="brand-glow image-mask relative overflow-hidden rounded-lg bg-clinic-mint"
+            >
+              <img
+                src="hero.webp"
+                alt="Veterinarian gently caring for a dog at a modern clinic"
+                class="h-[34rem] w-full object-cover"
+              />
+              <div
+                class="absolute inset-x-5 bottom-5 rounded-lg border border-white bg-white p-5 shadow-premium"
+              >
+                <div class="flex items-center justify-between gap-4">
+                  <div class="min-w-0">
+                    <p
+                      class="text-xs font-extrabold uppercase tracking-[0.16em] text-clinic-deep"
+                    >
+                      Clinic care
+                    </p>
+                    <p
+                      class="mt-1 max-w-md font-display text-xl font-extrabold leading-snug text-clinic-ink"
+                    >
+                      Consultation, grooming, wellness, and supplies
+                    </p>
+                  </div>
+                  <span
+                    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-clinic-yellow text-clinic-ink"
+                  >
+                    <i data-lucide="heart-pulse" class="h-6 w-6"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="marquee absolute left-4 top-40 hidden rounded-lg border border-clinic-yellow/50 bg-white p-4 shadow-premium sm:block"
+            >
+              <div class="flex items-center gap-3">
+                <span
+                  class="flex h-11 w-11 items-center justify-center rounded-lg bg-clinic-yellow/25 text-clinic-deep"
+                >
+                  <i data-lucide="shield-check" class="h-6 w-6"></i>
+                </span>
+                <div>
+                  <p class="text-sm font-extrabold text-clinic-ink">
+                    Clean, safe care
+                  </p>
+                  <p class="text-xs font-semibold text-slate-500">
+                    For cats, dogs, and family pets
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="bg-clinic-soft py-20">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center" data-aos="fade-up">
+            <span
+              class="text-sm font-extrabold uppercase tracking-[0.18em] text-clinic-green"
+              >Complete Pet Care</span
+            >
+            <h2
+              class="mt-3 font-display text-3xl font-extrabold text-clinic-ink sm:text-5xl"
+            >
+              Veterinary and wellness services in one caring clinic
+            </h2>
+            <div class="reveal-line mx-auto mt-5 h-1 w-24 rounded-full"></div>
+          </div>
+
+          <div class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <article
+              class="hover-lift rounded-lg border border-emerald-100 bg-white p-6 shadow-soft"
+              data-aos="fade-up"
+            >
+              <i
+                data-lucide="stethoscope"
+                class="h-9 w-9 text-clinic-green"
+              ></i>
+              <h3 class="mt-5 font-display text-lg font-extrabold">
+                Veterinary Consultation
+              </h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">
+                Careful assessments, treatment guidance, and family-friendly
+                advice.
+              </p>
+            </article>
+            <article
+              class="hover-lift rounded-lg border border-emerald-100 bg-white p-6 shadow-soft"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <i data-lucide="syringe" class="h-9 w-9 text-clinic-green"></i>
+              <h3 class="mt-5 font-display text-lg font-extrabold">
+                Vaccinations
+              </h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">
+                Core protection programs for puppies, kittens, and adult pets.
+              </p>
+            </article>
+            <article
+              class="hover-lift rounded-lg border border-emerald-100 bg-white p-6 shadow-soft"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <i data-lucide="scissors" class="h-9 w-9 text-clinic-green"></i>
+              <h3 class="mt-5 font-display text-lg font-extrabold">
+                Pet Grooming
+              </h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">
+                Bathing, coat care, trimming, and wellness grooming support.
+              </p>
+            </article>
+            <article
+              class="hover-lift rounded-lg border border-emerald-100 bg-white p-6 shadow-soft"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <i data-lucide="activity" class="h-9 w-9 text-clinic-green"></i>
+              <h3 class="mt-5 font-display text-lg font-extrabold">Surgery</h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">
+                Professional surgical care with attentive monitoring and
+                recovery support.
+              </p>
+            </article>
+            <article
+              class="hover-lift rounded-lg border border-emerald-100 bg-white p-6 shadow-soft"
+              data-aos="fade-up"
+            >
+              <i
+                data-lucide="shopping-bag"
+                class="h-9 w-9 text-clinic-green"
+              ></i>
+              <h3 class="mt-5 font-display text-lg font-extrabold">
+                Pet Supplies
+              </h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">
+                Clinic essentials, pet care products, and convenient supply
+                options.
+              </p>
+            </article>
+            <article
+              class="hover-lift rounded-lg border border-emerald-100 bg-white p-6 shadow-soft"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <i data-lucide="ambulance" class="h-9 w-9 text-clinic-green"></i>
+              <h3 class="mt-5 font-display text-lg font-extrabold">
+                Emergency Care
+              </h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">
+                Responsive assistance when your pet needs urgent attention.
+              </p>
+            </article>
+            <article
+              class="hover-lift rounded-lg border border-emerald-100 bg-white p-6 shadow-soft"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <i
+                data-lucide="heart-pulse"
+                class="h-9 w-9 text-clinic-green"
+              ></i>
+              <h3 class="mt-5 font-display text-lg font-extrabold">
+                Wellness Checkups
+              </h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">
+                Routine exams that help pets stay healthy through every life
+                stage.
+              </p>
+            </article>
+            <article
+              class="hover-lift rounded-lg border border-emerald-100 bg-white p-6 shadow-soft"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <i
+                data-lucide="shield-plus"
+                class="h-9 w-9 text-clinic-green"
+              ></i>
+              <h3 class="mt-5 font-display text-lg font-extrabold">
+                Deworming & Preventive Care
+              </h3>
+              <p class="mt-3 text-sm leading-6 text-slate-600">
+                Practical prevention plans for parasites and common health
+                risks.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="why" class="soft-gradient py-20">
+        <div
+          class="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-[0.95fr_1.05fr] lg:px-8"
+        >
+          <div class="grid grid-cols-2 gap-4" data-aos="fade-right">
+            <img
+              src="service1.webp"
+              alt="CDO Pet Doctor veterinary service"
+              class="h-72 w-full rounded-lg object-cover shadow-premium"
+            />
+            <img
+              src="service2.webp"
+              alt="CDO Pet Doctor grooming and clinic service"
+              class="mt-10 h-72 w-full rounded-lg object-cover shadow-premium"
+            />
+          </div>
+
+          <div data-aos="fade-left">
+            <span
+              class="text-sm font-extrabold uppercase tracking-[0.18em] text-clinic-green"
+              >Why Choose CDO Pet Doctor</span
+            >
+            <h2
+              class="mt-3 font-display text-3xl font-extrabold leading-tight text-clinic-ink sm:text-5xl"
+            >
+              Premium clinic care with the warmth pet owners remember
+            </h2>
+            <p class="mt-5 text-lg leading-8 text-slate-700">
+              From consultation to grooming and supplies, CDO Pet Doctor brings
+              organized care, friendly staff, and practical veterinary support
+              closer to families in Cagayan de Oro.
+            </p>
+
+            <div class="mt-8 grid gap-4 sm:grid-cols-2">
+              <div class="flex gap-4 rounded-lg bg-white p-5 shadow-soft">
+                <i
+                  data-lucide="smile-plus"
+                  class="h-7 w-7 shrink-0 text-clinic-green"
+                ></i>
+                <p class="font-bold text-clinic-ink">
+                  Caring and accommodating staff
+                </p>
+              </div>
+              <div class="flex gap-4 rounded-lg bg-white p-5 shadow-soft">
+                <i
+                  data-lucide="badge-check"
+                  class="h-7 w-7 shrink-0 text-clinic-green"
+                ></i>
+                <p class="font-bold text-clinic-ink">
+                  Complete veterinary and grooming services
+                </p>
+              </div>
+              <div class="flex gap-4 rounded-lg bg-white p-5 shadow-soft">
+                <i
+                  data-lucide="users"
+                  class="h-7 w-7 shrink-0 text-clinic-green"
+                ></i>
+                <p class="font-bold text-clinic-ink">
+                  Trusted by pet owners in Cagayan de Oro
+                </p>
+              </div>
+              <div class="flex gap-4 rounded-lg bg-white p-5 shadow-soft">
+                <i
+                  data-lucide="map-pinned"
+                  class="h-7 w-7 shrink-0 text-clinic-green"
+                ></i>
+                <p class="font-bold text-clinic-ink">
+                  Convenient clinic location
+                </p>
+              </div>
+              <div
+                class="flex gap-4 rounded-lg bg-white p-5 shadow-soft sm:col-span-2"
+              >
+                <i
+                  data-lucide="heart-handshake"
+                  class="h-7 w-7 shrink-0 text-clinic-green"
+                ></i>
+                <p class="font-bold text-clinic-ink">
+                  Pet-focused compassionate care for anxious pets and worried
+                  families
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="bg-white py-20">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div
+            class="flex flex-col justify-between gap-6 md:flex-row md:items-end"
+            data-aos="fade-up"
+          >
+            <div>
+              <span
+                class="text-sm font-extrabold uppercase tracking-[0.18em] text-clinic-green"
+                >Patient Families</span
+              >
+              <h2
+                class="mt-3 font-display text-3xl font-extrabold text-clinic-ink sm:text-5xl"
+              >
+                Real words from local pet owners
+              </h2>
+            </div>
+            <div class="rounded-lg bg-clinic-mint px-5 py-4 text-clinic-deep">
+              <div class="flex items-center gap-2 text-xl font-extrabold">
+                <i
+                  data-lucide="star"
+                  class="h-6 w-6 fill-clinic-yellow text-clinic-yellow"
+                ></i>
+                4.0
+              </div>
+              <p class="text-sm font-semibold">21 reviews</p>
+            </div>
+          </div>
+
+          <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            <figure
+              class="premium-card-gradient hover-lift flex min-h-56 flex-col justify-between rounded-lg border border-emerald-100 p-7 shadow-soft"
+              data-aos="fade-up"
+            >
+              <blockquote
+                class="text-xl font-extrabold leading-9 text-clinic-deep"
+              >
+                “They saved my cat from acute kidney infection.”
+              </blockquote>
+              <figcaption
+                class="mt-5 flex items-center gap-3 text-sm font-extrabold text-clinic-deep"
+              >
+                <i data-lucide="user-round" class="h-5 w-5"></i>
+                Robert Roy Dela Serna
+              </figcaption>
+            </figure>
+            <figure
+              class="premium-card-gradient hover-lift flex min-h-56 flex-col justify-between rounded-lg border border-emerald-100 p-7 shadow-soft"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <blockquote
+                class="text-xl font-extrabold leading-9 text-clinic-deep"
+              >
+                “Super accommodating and friendly staff.”
+              </blockquote>
+              <figcaption
+                class="mt-5 flex items-center gap-3 text-sm font-extrabold text-clinic-deep"
+              >
+                <i data-lucide="user-round" class="h-5 w-5"></i>
+                VIMAY EUSALAN
+              </figcaption>
+            </figure>
+            <figure
+              class="premium-card-gradient hover-lift flex min-h-56 flex-col justify-between rounded-lg border border-emerald-100 p-7 shadow-soft"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <blockquote
+                class="text-xl font-extrabold leading-9 text-clinic-deep"
+              >
+                “Grooming and other veterinary services and supplies are
+                available.”
+              </blockquote>
+              <figcaption
+                class="mt-5 flex items-center gap-3 text-sm font-extrabold text-clinic-deep"
+              >
+                <i data-lucide="user-round" class="h-5 w-5"></i>
+                Liane Katrina Emborgo
+              </figcaption>
+            </figure>
+            <figure
+              class="premium-card-gradient hover-lift flex min-h-56 flex-col justify-between rounded-lg border border-emerald-100 p-7 shadow-soft"
+              data-aos="fade-up"
+            >
+              <blockquote
+                class="text-xl font-extrabold leading-9 text-clinic-deep"
+              >
+                “Great service.”
+              </blockquote>
+              <figcaption
+                class="mt-5 flex items-center gap-3 text-sm font-extrabold text-clinic-deep"
+              >
+                <i data-lucide="user-round" class="h-5 w-5"></i>
+                Jose Paragoso
+              </figcaption>
+            </figure>
+            <figure
+              class="premium-card-gradient hover-lift flex min-h-56 flex-col justify-between rounded-lg border border-emerald-100 p-7 shadow-soft"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <blockquote
+                class="text-xl font-extrabold leading-9 text-clinic-deep"
+              >
+                “Good service.”
+              </blockquote>
+              <figcaption
+                class="mt-5 flex items-center gap-3 text-sm font-extrabold text-clinic-deep"
+              >
+                <i data-lucide="user-round" class="h-5 w-5"></i>
+                Drew B.
+              </figcaption>
+            </figure>
+            <figure
+              class="premium-card-gradient hover-lift flex min-h-56 flex-col justify-between rounded-lg border border-emerald-100 p-7 shadow-soft"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <blockquote
+                class="text-xl font-extrabold leading-9 text-clinic-deep"
+              >
+                “Yet it's far from our home but they have nice staffs and very
+                accommodating.”
+              </blockquote>
+              <figcaption
+                class="mt-5 flex items-center gap-3 text-sm font-extrabold text-clinic-deep"
+              >
+                <i data-lucide="user-round" class="h-5 w-5"></i>
+                Malone Asumbrado
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="medical-band paw-pattern py-20 text-white">
+        <div class="relative z-10 mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="mx-auto max-w-3xl text-center" data-aos="fade-up">
+            <span
+              class="text-sm font-extrabold uppercase tracking-[0.18em] text-clinic-yellow"
+              >Clinic Services</span
+            >
+            <h2
+              class="mt-3 font-display text-3xl font-extrabold leading-tight text-white sm:text-5xl"
+            >
+              Built for safer visits, calmer pets, and clearer care
+            </h2>
+            <p class="mt-5 text-lg leading-8 text-white/80">
+              A clean, organized clinic experience with practical veterinary
+              support, grooming care, and friendly staff from arrival to
+              follow-up.
+            </p>
+          </div>
+
+          <div class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <div
+              class="feature-card-gradient hover-lift flex min-h-44 flex-col justify-between rounded-lg border border-white p-7 text-clinic-ink shadow-soft"
+              data-aos="fade-up"
+            >
+              <i data-lucide="user-check" class="h-9 w-9 text-clinic-green"></i>
+              <h3 class="mt-5 font-display text-xl font-extrabold">
+                Experienced Veterinary Team
+              </h3>
+            </div>
+            <div
+              class="feature-card-gradient hover-lift flex min-h-44 flex-col justify-between rounded-lg border border-white p-7 text-clinic-ink shadow-soft"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <i data-lucide="sparkles" class="h-9 w-9 text-clinic-green"></i>
+              <h3 class="mt-5 font-display text-xl font-extrabold">
+                Safe & Clean Environment
+              </h3>
+            </div>
+            <div
+              class="feature-card-gradient hover-lift flex min-h-44 flex-col justify-between rounded-lg border border-white p-7 text-clinic-ink shadow-soft"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <i data-lucide="bath" class="h-9 w-9 text-clinic-green"></i>
+              <h3 class="mt-5 font-display text-xl font-extrabold">
+                Pet Grooming & Wellness
+              </h3>
+            </div>
+            <div
+              class="feature-card-gradient hover-lift flex min-h-44 flex-col justify-between rounded-lg border border-white p-7 text-clinic-ink shadow-soft"
+              data-aos="fade-up"
+            >
+              <i
+                data-lucide="package-check"
+                class="h-9 w-9 text-clinic-green"
+              ></i>
+              <h3 class="mt-5 font-display text-xl font-extrabold">
+                Veterinary Supplies Available
+              </h3>
+            </div>
+            <div
+              class="feature-card-gradient hover-lift flex min-h-44 flex-col justify-between rounded-lg border border-white p-7 text-clinic-ink shadow-soft"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              <i data-lucide="siren" class="h-9 w-9 text-clinic-green"></i>
+              <h3 class="mt-5 font-display text-xl font-extrabold">
+                Emergency Assistance
+              </h3>
+            </div>
+            <div
+              class="feature-card-gradient hover-lift flex min-h-44 flex-col justify-between rounded-lg border border-white p-7 text-clinic-ink shadow-soft"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <i data-lucide="heart" class="h-9 w-9 text-clinic-green"></i>
+              <h3 class="mt-5 font-display text-xl font-extrabold">
+                Friendly Staff
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="location" class="bg-clinic-soft py-20">
+        <div
+          class="mx-auto grid max-w-7xl gap-6 px-5 lg:grid-cols-[0.9fr_1.1fr] lg:px-8"
+        >
+          <div
+            class="rounded-lg bg-white p-7 shadow-premium lg:min-h-[30rem]"
+            data-aos="fade-right"
+          >
+            <span
+              class="text-sm font-extrabold uppercase tracking-[0.18em] text-clinic-green"
+              >Visit the Clinic</span
+            >
+            <h2
+              class="mt-3 font-display text-3xl font-extrabold text-clinic-ink sm:text-4xl"
+            >
+              CDO Pet Doctor
+            </h2>
+            <div class="mt-6 space-y-5">
+              <div class="flex gap-4">
+                <i
+                  data-lucide="map-pin"
+                  class="mt-1 h-6 w-6 shrink-0 text-clinic-green"
+                ></i>
+                <p class="text-lg font-semibold leading-8 text-slate-700">
+                  180 Pedro N. Roa Senior Ave, Cagayan De Oro City, Misamis
+                  Oriental
+                </p>
+              </div>
+              <div class="flex gap-4">
+                <i
+                  data-lucide="phone-call"
+                  class="mt-1 h-6 w-6 shrink-0 text-clinic-green"
+                ></i>
+                <a
+                  class="text-lg font-extrabold text-clinic-deep hover:text-clinic-green"
+                  href="tel:+639177942319"
+                  >0917 794 2319</a
+                >
+              </div>
+              <div class="flex gap-4">
+                <i
+                  data-lucide="star"
+                  class="mt-1 h-6 w-6 shrink-0 fill-clinic-yellow text-clinic-yellow"
+                ></i>
+                <p class="text-lg font-extrabold text-clinic-ink">
+                  4.0
+                  <span class="font-semibold text-slate-600"
+                    >from 21 reviews</span
+                  >
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a
+                class="inline-flex items-center justify-center gap-2 rounded-lg bg-clinic-green px-5 py-4 font-extrabold text-white shadow-soft hover:bg-clinic-deep"
+                href="https://www.facebook.com/CDOPetDoctor/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i data-lucide="calendar-plus" class="h-5 w-5"></i>
+                Book Appointment
+              </a>
+              <a
+                class="inline-flex items-center justify-center gap-2 rounded-lg border border-clinic-green/25 bg-white px-5 py-4 font-extrabold text-clinic-deep shadow-soft hover:bg-clinic-mint"
+                href="https://www.google.com/maps/search/?api=1&query=180%20Pedro%20N.%20Roa%20Senior%20Ave%2C%20Cagayan%20De%20Oro%20City%2C%20Misamis%20Oriental"
+              >
+                <i data-lucide="navigation" class="h-5 w-5"></i>
+                Get Directions
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="overflow-hidden rounded-lg border border-emerald-100 bg-white shadow-premium"
+            data-aos="fade-up"
+          >
+            <img
+              src="location.webp"
+              alt="CDO Pet Doctor clinic storefront location"
+              class="h-full min-h-[30rem] w-full object-contain"
+            />
+          </div>
+
+          <div
+            class="overflow-hidden rounded-lg border border-emerald-100 bg-white shadow-premium lg:col-span-2"
+            data-aos="fade-left"
+          >
+            <iframe
+              title="Map to CDO Pet Doctor"
+              src="https://www.google.com/maps?q=180%20Pedro%20N.%20Roa%20Senior%20Ave%2C%20Cagayan%20De%20Oro%20City%2C%20Misamis%20Oriental&output=embed"
+              class="h-[28rem] w-full"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative overflow-hidden bg-white py-20">
+        <div
+          class="mx-auto grid max-w-7xl items-center gap-10 px-5 lg:grid-cols-[1.1fr_0.9fr] lg:px-8"
+        >
+          <div data-aos="fade-up">
+            <span
+              class="text-sm font-extrabold uppercase tracking-[0.18em] text-clinic-green"
+              >Compassionate Care Starts Here</span
+            >
+            <h2
+              class="mt-3 font-display text-4xl font-extrabold leading-tight text-clinic-ink sm:text-6xl"
+            >
+              Give Your Pets the Care They Deserve
+            </h2>
+            <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-700">
+              Call CDO Pet Doctor for appointments, wellness care, grooming,
+              supplies, or urgent veterinary support.
+            </p>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a
+                class="inline-flex items-center justify-center gap-2 rounded-lg bg-clinic-green px-6 py-4 font-extrabold text-white shadow-premium hover:bg-clinic-deep"
+                href="https://www.facebook.com/CDOPetDoctor/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i data-lucide="calendar-heart" class="h-5 w-5"></i>
+                Book Appointment
+              </a>
+            </div>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2" data-aos="fade-left">
+            <img
+              src="cat.webp"
+              alt="Cat receiving care at CDO Pet Doctor"
+              class="h-96 w-full rounded-lg object-cover shadow-premium"
+            />
+            <img
+              src="cat2.webp"
+              alt="Cat wellness and veterinary care"
+              class="h-96 w-full rounded-lg object-cover shadow-premium sm:mt-10"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-clinic-ink py-14 text-white">
+      <div
+        class="mx-auto grid max-w-7xl gap-10 px-5 md:grid-cols-[1.1fr_0.7fr_0.8fr_0.7fr] lg:px-8"
+      >
+        <div>
+          <div class="flex items-center gap-3">
+            <span
+              class="flex h-12 w-12 items-center justify-center rounded-lg bg-clinic-green text-white"
+            >
+              <i data-lucide="paw-print" class="h-7 w-7"></i>
+            </span>
+            <div>
+              <p class="font-display text-xl font-extrabold">CDO Pet Doctor</p>
+              <p class="text-sm font-semibold text-white/60">
+                Veterinary Clinic
+              </p>
+            </div>
+          </div>
+          <p class="mt-5 max-w-sm leading-7 text-white/68">
+            Modern veterinary, grooming, wellness, and supply services for pets
+            and families in Cagayan de Oro.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-display text-lg font-extrabold">Quick Links</h3>
+          <div class="mt-5 grid gap-3 text-sm font-semibold text-white/68">
+            <a class="hover:text-clinic-yellow" href="#services">Services</a>
+            <a class="hover:text-clinic-yellow" href="#why">Why Choose Us</a>
+            <a class="hover:text-clinic-yellow" href="#reviews">Reviews</a>
+            <a class="hover:text-clinic-yellow" href="#location">Location</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-display text-lg font-extrabold">Contact</h3>
+          <div
+            class="mt-5 grid gap-3 text-sm font-semibold leading-6 text-white/68"
+          >
+            <a class="hover:text-clinic-yellow" href="tel:+639177942319"
+              >0917 794 2319</a
+            >
+            <a
+              class="hover:text-clinic-yellow"
+              href="mailto:cdopetdoctor2010@gmail.com"
+              >cdopetdoctor2010@gmail.com</a
+            >
+            <p>
+              180 Pedro N. Roa Senior Ave, Cagayan De Oro City, Misamis Oriental
+            </p>
+            <p>4.0 star rating, 21 reviews</p>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-display text-lg font-extrabold">Social</h3>
+          <div class="mt-5 flex gap-3">
+            <a
+              class="flex h-11 w-11 items-center justify-center rounded-lg bg-white/10 text-sm font-extrabold text-white hover:bg-clinic-green"
+              href="https://www.facebook.com/CDOPetDoctor/"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              f
+            </a>
+            <a
+              class="flex h-11 w-11 items-center justify-center rounded-lg bg-white/10 text-white hover:bg-clinic-green"
+              href="mailto:cdopetdoctor2010@gmail.com"
+              aria-label="Email"
+            >
+              <i data-lucide="mail" class="h-5 w-5"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="mx-auto mt-10 max-w-7xl border-t border-white/10 px-5 pt-6 text-sm font-semibold text-white/50 lg:px-8"
+      >
+        <p>
+          © 2026 CDO Pet Doctor. Professional veterinary care in Cagayan de Oro.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      lucide.createIcons();
+      AOS.init({
+        duration: 760,
+        easing: "ease-out-cubic",
+        once: true,
+        offset: 80,
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", (event) => {
+          const target = document.querySelector(anchor.getAttribute("href"));
+          if (!target) return;
+          event.preventDefault();
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+    </script>
+  </body>
+</html>
