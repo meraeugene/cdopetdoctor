@@ -14,7 +14,8 @@ A modern static landing page for CDO Pet Doctor, a veterinary clinic in Cagayan 
     +-- hero.webp
     +-- location.webp
     +-- service1.webp
-    `-- service2.webp
+    +-- service2.webp
+    `-- thumbnail.png
 ```
 
 ## How To View
